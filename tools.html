@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>أدوات اليوتيوبرز</title>
+
+<style>
+
+body{
+margin:0;
+background:#101010;
+color:white;
+font-family:tahoma,Arial;
+}
+
+header{
+background:linear-gradient(135deg,#ff0000,#770000);
+padding:50px;
+text-align:center;
+}
+
+header h1{
+font-size:40px;
+}
+
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+
+.card{
+background:#1f1f1f;
+padding:30px;
+margin:25px 0;
+border-radius:25px;
+box-shadow:0 0 20px #ff000040;
+}
+
+
+h2{
+color:#ff3333;
+}
+
+
+input{
+width:90%;
+padding:15px;
+border-radius:10px;
+border:none;
+margin:10px;
+font-size:18px;
+}
+
+
+button{
+background:#ff0000;
+color:white;
+border:0;
+padding:15px 30px;
+border-radius:30px;
+cursor:pointer;
+font-size:18px;
+}
+
+
+.result{
+margin-top:20px;
+font-size:22px;
+color:#00ff99;
+}
+
+
+.tool{
+background:#292929;
+padding:20px;
+border-radius:15px;
+margin:15px 0;
+}
+
+
+a{
+background:red;
+color:white;
+padding:12px 25px;
+border-radius:30px;
+text-decoration:none;
+}
+
+
+footer{
+background:#000;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+
+<header>
+
+<h1>🛠️ أدوات اليوتيوبرز</h1>
+
+<p>
+أدوات ونصائح تساعدك على تطوير قناتك
+</p>
+
+</header>
+
+
+
+<div class="container">
+
+
+
+<div class="card">
+
+<h2>💰 حاسبة أرباح اليوتيوب</h2>
+
+<p>
+أدخل عدد المشاهدات لمعرفة تقدير تقريبي (ليس ضماناً).
+</p>
+
+
+<input id="views" type="number" placeholder="عدد المشاهدات">
+
+
+<br>
+
+<button onclick="calculate()">
+احسب الأرباح
+</button>
+
+
+<div class="result" id="result"></div>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>🚀 أدوات مفيدة لصانع المحتوى</h2>
+
+
+<div class="tool">
+
+<h3>🎨 تصميم الصور المصغرة</h3>
+
+<p>
+استخدم أدوات التصميم لصنع صور جذابة تزيد نسبة الضغط على الفيديو.
+</p>
+
+</div>
+
+
+
+<div class="tool">
+
+<h3>🎬 تعديل الفيديو</h3>
+
+<p>
+تعلم المونتاج وإضافة المؤثرات لتحسين جودة المحتوى.
+</p>
+
+</div>
+
+
+
+<div class="tool">
+
+<h3>📊 تحليل القناة</h3>
+
+<p>
+تابع المشاهدات ومدة المشاهدة وتعرف على أكثر الفيديوهات نجاحاً.
+</p>
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card">
+
+<h2>💡 مولد أفكار فيديوهات</h2>
+
+<ul>
+
+<li>أفضل 10 نصائح في مجال تخصصك</li>
+
+<li>تجربة شيء جديد لمدة 30 يوم</li>
+
+<li>شرح أخطاء المبتدئين</li>
+
+<li>مقارنة بين منتجات أو أفكار</li>
+
+<li>حل مشكلة يعاني منها الناس</li>
+
+</ul>
+
+</div>
+
+
+
+
+<a href="index.html">
+⬅️ العودة للرئيسية
+</a>
+
+
+
+</div>
+
+
+
+<footer>
+
+© 2026 أكاديمية الربح من اليوتيوب
+
+</footer>
+
+
+
+
+<script>
+
+function calculate(){
+
+let views=document.getElementById("views").value;
+
+let money=views*0.002;
+
+document.getElementById("result").innerHTML=
+"التقدير التقريبي: $" + money.toFixed(2);
+
+}
+
+</script>
+
+
+</body>
+
+</html>
